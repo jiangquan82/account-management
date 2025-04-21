@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>账号删除请求 / Account Deletion Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-group {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .note {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>账号删除请求</h1>
+    <p>如果您希望删除游戏账号及相关个人数据，请填写以下信息，我们将在7个工作日内处理您的请求。</p>
+
+    <form action="mailto:support@yourgame.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label>您的游戏ID / 用户名：</label>
+            <input type="text" name="user_id" required>
+        </div>
+
+        <div class="form-group">
+            <label>绑定的邮箱（如有）：</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label>额外备注（可选）：</label>
+            <textarea name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">提交请求</button>
+    </form>
+
+    <p class="note">我们会通过您填写的信息确认身份并执行删除。数据一经删除无法恢复，请谨慎操作。</p>
+
+    <hr>
+
+    <h1>Account Deletion Request</h1>
+    <p>If you wish to delete your game account and personal data, please fill out the form below. We will process your request within 7 business days.</p>
+
+    <form action="mailto:support@yourgame.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label>Your Game ID / Username:</label>
+            <input type="text" name="user_id" required>
+        </div>
+
+        <div class="form-group">
+            <label>Bound Email (if any):</label>
+            <input type="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label>Additional Note (optional):</label>
+            <textarea name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <p class="note">We will verify your identity based on the provided information. Once deleted, the data cannot be recovered.</p>
+
+</body>
+</html>
